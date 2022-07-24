@@ -81,7 +81,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ComboBox>
-      <Button fx:id="btnReseveRoom" layoutX="56.0" layoutY="340.0" mnemonicParsing="false" onAction="#ReserveRoomOnAction" pickOnBounds="false" prefHeight="38.0" prefWidth="245.0" style="-fx-background-color: #0E6655; -fx-background-radius: 8px;" text="RESERVE ROOM" textFill="WHITE">
+      <Button fx:id="btnReserveRoom" layoutX="56.0" layoutY="340.0" mnemonicParsing="false" onAction="#ReserveRoomOnAction" pickOnBounds="false" prefHeight="38.0" prefWidth="245.0" style="-fx-background-color: #0E6655; -fx-background-radius: 8px;" text="RESERVE ROOM" textFill="WHITE">
          <font>
             <Font name="Trebuchet MS Bold" size="13.0" />
          </font>
