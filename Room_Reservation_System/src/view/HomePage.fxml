@@ -35,7 +35,7 @@
                   <Font name="System Bold" size="18.0" />
                </font>
             </Button>
-            <Button fx:id="btnRecept" layoutX="47.0" layoutY="159.0" mnemonicParsing="false" onAction="#ReceptionistOnAction" prefHeight="40.0" prefWidth="122.0" style="-fx-background-color: #c56cf0; -fx-background-radius: 12px;" text="Reception">
+            <Button fx:id="btnReceipt" layoutX="47.0" layoutY="159.0" mnemonicParsing="false" onAction="#ReceptionistOnAction" prefHeight="40.0" prefWidth="122.0" style="-fx-background-color: #c56cf0; -fx-background-radius: 12px;" text="Reception">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
