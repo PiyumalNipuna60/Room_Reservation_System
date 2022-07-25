@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="588.0" prefWidth="750.0" style="-fx-background-color: #bdc3c7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserDashBoardController">
+   <children>
+      <Label layoutX="15.0" layoutY="66.0" pickOnBounds="false" prefHeight="508.0" prefWidth="720.0" style="-fx-background-color: #ffffff; -fx-background-radius: 13px;">
+         <effect>
+            <DropShadow height="0.0" radius="0.0" width="0.0">
+               <color>
+                  <Color blue="0.34736841917037964" green="0.31134504079818726" red="0.3395633399486542" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <ImageView fitHeight="508.0" fitWidth="720.0" layoutX="15.0" layoutY="66.0" opacity="0.66" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/AdobeStock_177187092_Preview.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutY="2.0" prefHeight="50.0" prefWidth="750.0" style="-fx-background-color: #0B5345;" text="         ROOM RESERVATION SYSTEM" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+         <effect>
+            <DropShadow height="85.35" radius="25.4925" spread="0.23" width="18.62" />
+         </effect>
+      </Label>
+      <ComboBox fx:id="comboSelectGuest" layoutX="56.0" layoutY="161.0" prefHeight="31.0" prefWidth="245.0" promptText="SELECT GUEST" style="-fx-background-color: #138D75; -fx-background-radius: 6px;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ComboBox>
+      <Button fx:id="btnAddGuest" layoutX="480.0" layoutY="207.0" mnemonicParsing="false" onAction="#AddGuestOnAction" pickOnBounds="false" prefHeight="38.0" prefWidth="230.0" style="-fx-background-color: #0E6655; -fx-background-radius: 8px;" text="ADD GUEST" textFill="WHITE">
+         <font>
+            <Font name="Trebuchet MS Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="39.17" offsetX="5.0" offsetY="5.0" radius="17.52" spread="0.07" width="32.91">
+               <color>
+                  <Color blue="0.2179473638534546" green="0.43157893419265747" opacity="0.8700000047683716" red="0.04315789416432381" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button fx:id="btnMaintenance" layoutX="480.0" layoutY="340.0" mnemonicParsing="false" onAction="#MAINTENANCEOnAction" pickOnBounds="false" prefHeight="38.0" prefWidth="230.0" style="-fx-background-color: #0E6655; -fx-background-radius: 8px;" text="MAINTENANCE" textFill="WHITE">
+         <font>
+            <Font name="Trebuchet MS Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="39.17" offsetX="5.0" offsetY="5.0" radius="17.52" spread="0.07" width="32.91">
+               <color>
+                  <Color blue="0.2179473638534546" green="0.43157893419265747" opacity="0.8700000047683716" red="0.04315789416432381" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <ComboBox fx:id="comboSelectRoom" layoutX="56.0" layoutY="222.0" prefHeight="31.0" prefWidth="245.0" promptText="SELECT ROOM" style="-fx-background-color: #138D75; -fx-background-radius: 6px;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ComboBox>
+      <ComboBox fx:id="comboSelectMealPlan" layoutX="56.0" layoutY="279.0" prefHeight="31.0" prefWidth="245.0" promptText="SELECT MEAL PLAN" style="-fx-background-color: #138D75; -fx-background-radius: 6px;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ComboBox>
+      <Button fx:id="btnReserveRoom" layoutX="56.0" layoutY="340.0" mnemonicParsing="false" onAction="#ReserveRoomOnAction" pickOnBounds="false" prefHeight="38.0" prefWidth="245.0" style="-fx-background-color: #0E6655; -fx-background-radius: 8px;" text="RESERVE ROOM" textFill="WHITE">
+         <font>
+            <Font name="Trebuchet MS Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="39.17" offsetX="5.0" offsetY="5.0" radius="17.52" spread="0.07" width="32.91">
+               <color>
+                  <Color blue="0.2179473638534546" green="0.43157893419265747" opacity="0.8700000047683716" red="0.04315789416432381" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Label fx:id="lblRealDate" alignment="CENTER" contentDisplay="CENTER" layoutX="480.0" layoutY="100.0" prefHeight="27.0" prefWidth="230.0" style="-fx-background-color: #138D75; -fx-background-radius: 6px;" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblRealTime" alignment="CENTER" layoutX="480.0" layoutY="130.0" prefHeight="61.0" prefWidth="230.0" style="-fx-background-color: #138D75; -fx-background-radius: 6px;" text="12.56" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="35.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnBack" layoutX="658.0" layoutY="14.0" mnemonicParsing="false" onAction="#BackOnActio9n" prefHeight="26.0" prefWidth="64.0" style="-fx-background-color: 093CF0; -fx-background-color: blue;" text="Back" />
+      <Button fx:id="btnManageReservation" layoutX="481.0" layoutY="275.0" mnemonicParsing="false" onAction="#manageReservationOnAction" pickOnBounds="false" prefHeight="38.0" prefWidth="230.0" style="-fx-background-color: #0E6655; -fx-background-radius: 8px;" text="MANAGE RESERVATIONS" textFill="WHITE">
+         <font>
+            <Font name="Trebuchet MS Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="39.17" offsetX="5.0" offsetY="5.0" radius="17.52" spread="0.07" width="32.91">
+               <color>
+                  <Color blue="0.2179473638534546" green="0.43157893419265747" opacity="0.8700000047683716" red="0.04315789416432381" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <TextField fx:id="txtId" layoutX="56.0" layoutY="98.0" prefHeight="31.0" prefWidth="245.0" promptText="Reservation ID " style="-fx-background-radius: 6px; -fx-background-color: #138D75;" />
+   </children>
+</AnchorPane>
